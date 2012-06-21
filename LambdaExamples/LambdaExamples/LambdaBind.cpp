@@ -6,12 +6,12 @@
 * Last modified: 21. Jun. 2012
 
 * Description: This code is to compare use of lambda and std::bind to 
-				achieve same goal. 
-				Sometimes I need to iterate over containers to apply same
-				logic to all of items inside. 
-				There are two choice. One is use of std::bind and the other
-				is C++11 Lambda.
-				This example illustrates two cases.
+		achieve same goal. 
+		Sometimes I need to iterate over containers to apply same
+		logic to all of items inside. 
+		There are two choice. One is use of std::bind and the other
+		is C++11 Lambda.
+		This example illustrates two cases.
 
 **************************************************************************/
 
@@ -114,6 +114,7 @@ void TestLambda()
 	Print(v);
 }
 
+#ifdef __LAMBDA_BIND__
 
 int main(int argc, char* argv[])
 { 
@@ -122,6 +123,8 @@ int main(int argc, char* argv[])
 
 	return 0;
 }
+
+#endif//__LAMBDA_BIND__
 
 /*
 Output
