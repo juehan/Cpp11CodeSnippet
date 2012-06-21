@@ -21,3 +21,5 @@ Debug
 *.tlog
 *.idb
 *.pdb
+*.log
+*.lastbuildstate
