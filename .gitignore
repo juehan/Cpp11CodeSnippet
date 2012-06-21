@@ -10,3 +10,14 @@
 *.lai
 *.la
 *.a
+
+Debug
+*.sdf
+*.opensdf
+*.suo
+*.exe
+*.ilk
+*.filters
+*.tlog
+*.idb
+*.pdb
