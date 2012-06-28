@@ -1,7 +1,6 @@
 //ownership problem in raw pointer
 
 #include <iostream>
-#include <memory>
 #include <string>
 
 class Person
