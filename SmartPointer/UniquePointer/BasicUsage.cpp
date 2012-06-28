@@ -1,4 +1,4 @@
-//ownership problem in raw pointer
+//How to use unique_ptr
 
 #include <iostream>
 #include <string>
