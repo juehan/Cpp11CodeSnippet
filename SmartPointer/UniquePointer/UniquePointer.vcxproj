@@ -74,8 +74,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BasicUsage.cpp" />
-    <ClCompile Include="RawPointerProblem.cpp" />
+    <ClCompile Include="BasicUsage2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

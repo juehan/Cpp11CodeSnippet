@@ -29,6 +29,7 @@ void func(std::unique_ptr<Person> p)
 
 
 
+
 int main()
 {
 	//1. here i created unique pointer
