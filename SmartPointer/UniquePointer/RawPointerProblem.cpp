@@ -1,3 +1,5 @@
+//ownership problem in raw pointer
+
 #include <iostream>
 #include <memory>
 #include <string>
@@ -17,19 +19,25 @@ public:
 
 };
 
-void blackhallFunc(Person* p)
+void blackholeFunc(Person* p)
 {
-	//who owns the pointer p now?	
+	//3. now this freaking function just swallow it like blackhole.	
 	delete p;
 }
 
 int main()
 {
-	//ownership problem in raw pointer
+	//1. here i created raw pointer
 	Person* p1 = new Person(3, "baby");
-	blackhallFunc(p1);
+
+	//2. and pass it to one function
+	blackholeFunc(p1);
+
+	//4. Pointer owner just believe his pointer is still safe
 	std::cout<<p1->GetAge()<<std::endl;
-	delete p1; //oops, this will crash your app
+
+	//5. Ooops, this will crash your app
+	delete p1; 
 	
 	return 0;
 }
