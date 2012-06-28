@@ -12,6 +12,7 @@
 *.a
 
 Debug
+Release
 *.sdf
 *.opensdf
 *.suo
